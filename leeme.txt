@@ -1,0 +1,1 @@
+es aconsejable leer el README.md contenido en la raiz de estre proyecto

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module usuario</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">usuario</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:/home/alvarowau/Documentos/poyectos-python/tarea2/usuario.py">/home/alvarowau/Documentos/poyectos-python/tarea2/usuario.py</a></td></tr></table>
+    <p><span class="code">Módulo&nbsp;para&nbsp;gestionar&nbsp;usuarios&nbsp;con&nbsp;validación&nbsp;de&nbsp;NIF&nbsp;y&nbsp;NIE.<br>
+&nbsp;<br>
+Este&nbsp;módulo&nbsp;incluye&nbsp;una&nbsp;clase&nbsp;`<a href="#Usuario">Usuario</a>`&nbsp;que&nbsp;permite&nbsp;almacenar&nbsp;información&nbsp;básica&nbsp;de&nbsp;un&nbsp;usuario,<br>
+generar&nbsp;nombres&nbsp;de&nbsp;usuario&nbsp;a&nbsp;partir&nbsp;de&nbsp;su&nbsp;nombre&nbsp;y&nbsp;primer&nbsp;apellido,&nbsp;y&nbsp;validar&nbsp;NIF&nbsp;o&nbsp;NIE.<br>
+&nbsp;<br>
+Clases:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Usuario">Usuario</a>:&nbsp;Representa&nbsp;a&nbsp;un&nbsp;usuario&nbsp;con&nbsp;sus&nbsp;datos&nbsp;y&nbsp;métodos&nbsp;asociados.<br>
+&nbsp;<br>
+Tests:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Los&nbsp;ejemplos&nbsp;de&nbsp;uso&nbsp;están&nbsp;documentados&nbsp;al&nbsp;final&nbsp;de&nbsp;este&nbsp;archivo.<br>
+&nbsp;<br>
+Autor:&nbsp;[Tu&nbsp;Nombre]<br>
+Fecha:&nbsp;[Fecha&nbsp;Actual]</span></p>
+<p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="usuario.html#Usuario">Usuario</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Usuario">class <strong>Usuario</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#Usuario">Usuario</a>(nombre:&nbsp;str,&nbsp;apellido1:&nbsp;str,&nbsp;apellido2:&nbsp;str)<br>
+&nbsp;<br>
+Clase&nbsp;para&nbsp;almacenar&nbsp;y&nbsp;gestionar&nbsp;datos&nbsp;de&nbsp;un&nbsp;usuario.<br>
+&nbsp;<br>
+Atributos:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;nombre&nbsp;(str):&nbsp;Nombre&nbsp;del&nbsp;usuario.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;apellido1&nbsp;(str):&nbsp;Primer&nbsp;apellido&nbsp;del&nbsp;usuario.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;apellido2&nbsp;(str):&nbsp;Segundo&nbsp;apellido&nbsp;del&nbsp;usuario.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;usuario&nbsp;(str):&nbsp;Nombre&nbsp;de&nbsp;usuario&nbsp;generado.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;nif&nbsp;(str):&nbsp;Número&nbsp;de&nbsp;identificación&nbsp;fiscal&nbsp;(NIF/NIE).<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="Usuario-__init__"><strong>__init__</strong></a>(self, nombre: str, apellido1: str, apellido2: str)</dt><dd><span class="code">Constructor&nbsp;de&nbsp;la&nbsp;clase&nbsp;<a href="#Usuario">Usuario</a>.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;nombre&nbsp;(str):&nbsp;Nombre&nbsp;del&nbsp;usuario.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;apellido1&nbsp;(str):&nbsp;Primer&nbsp;apellido&nbsp;del&nbsp;usuario.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;apellido2&nbsp;(str):&nbsp;Segundo&nbsp;apellido&nbsp;del&nbsp;usuario.</span></dd></dl>
+
+<dl><dt><a name="Usuario-fnie"><strong>fnie</strong></a>(self, nie: str) -&gt; bool</dt><dd><span class="code">Valida&nbsp;si&nbsp;la&nbsp;letra&nbsp;del&nbsp;NIE&nbsp;es&nbsp;correcta.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;nie&nbsp;(str):&nbsp;NIE&nbsp;a&nbsp;validar.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;bool:&nbsp;True&nbsp;si&nbsp;el&nbsp;NIE&nbsp;es&nbsp;válido,&nbsp;False&nbsp;en&nbsp;caso&nbsp;contrario.</span></dd></dl>
+
+<dl><dt><a name="Usuario-fnif"><strong>fnif</strong></a>(self, nif: str) -&gt; bool</dt><dd><span class="code">Valida&nbsp;si&nbsp;la&nbsp;letra&nbsp;del&nbsp;NIF&nbsp;es&nbsp;correcta.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;nif&nbsp;(str):&nbsp;NIF&nbsp;a&nbsp;validar.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;bool:&nbsp;True&nbsp;si&nbsp;el&nbsp;NIF&nbsp;es&nbsp;válido,&nbsp;False&nbsp;en&nbsp;caso&nbsp;contrario.</span></dd></dl>
+
+<dl><dt><a name="Usuario-gen_usuario"><strong>gen_usuario</strong></a>(self) -&gt; str</dt><dd><span class="code">Genera&nbsp;un&nbsp;nombre&nbsp;de&nbsp;usuario&nbsp;a&nbsp;partir&nbsp;de&nbsp;la&nbsp;inicial&nbsp;del&nbsp;nombre&nbsp;y&nbsp;el&nbsp;primer&nbsp;apellido.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;str:&nbsp;Nombre&nbsp;de&nbsp;usuario&nbsp;generado.</span></dd></dl>
+
+<dl><dt><a name="Usuario-setnif"><strong>setnif</strong></a>(self, identificador: str)</dt><dd><span class="code">Asigna&nbsp;un&nbsp;NIF&nbsp;o&nbsp;NIE&nbsp;al&nbsp;usuario&nbsp;si&nbsp;es&nbsp;válido.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;identificador&nbsp;(str):&nbsp;NIF&nbsp;o&nbsp;NIE&nbsp;a&nbsp;asignar.</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>
