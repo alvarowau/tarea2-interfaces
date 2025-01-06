@@ -1,1 +1,1 @@
-es aconsejable leer el README.md contenido en la raiz de estre proyecto
+Es aconsejable leer el archivo `README.md` contenido en la raíz de este proyecto o en https://github.com/alvarowau/tarea2-interfaces para obtener más detalles sobre el proyecto.
