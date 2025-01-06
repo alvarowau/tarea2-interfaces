@@ -10,8 +10,8 @@ Clases:
 Tests:
     Los ejemplos de uso están documentados al final de este archivo.
 
-Autor: [Tu Nombre]
-Fecha: [Fecha Actual]
+Autor: Alvaro Bajo
+Fecha: 06-01-2025
 """
 
 class Usuario:
